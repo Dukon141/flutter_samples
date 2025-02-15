@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_samples/pages/home_page.dart';
+import 'package:flutter_samples/ui/pages/home_page.dart';
+import 'package:flutter_samples/ui/theme/AppTheme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -18,9 +19,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           title: 'Flutter Samples',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          ),
+          theme: appTheme,
           home: const HomePage(),
         );
       },
