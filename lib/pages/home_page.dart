@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_samples/constants/size_constants.dart';
 import 'package:flutter_samples/widgets/custom_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +10,10 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: ListView(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.symmetric(
+            vertical: SizeConstants.verticalMargin,
+            horizontal: SizeConstants.horizontalMargin,
+          ),
           children: [CustomButton(text: 'Notes', onPressed: () {})],
         ),
       ),
